@@ -1,0 +1,5 @@
+account: 1919810
+authKey: ZenBuMuDa
+miraiHost: http://localhost:8080
+load_folder:
+  - entertain
