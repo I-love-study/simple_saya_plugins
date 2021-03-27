@@ -8,6 +8,7 @@ from graia.application.group import Group, Member
 from graia.saya import Saya, Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.template import Template
+from graiax import silkcoder
 from expand import Netease
 from expand import transcode
 
@@ -29,9 +30,8 @@ async def bar_music(app: GraiaMiraiApplication, group: Group, member: Member, ta
 	try:
 		download = await Netease.download_song(search_data[0]['id'])
 	except Exception as e:
-		print(e)
 		await app.sendGroupMessage(group, Template('不知道为什么，但是我就是放不了').render())
 		return
-	music_b = await transcode.silk(download, 'b', '-ss 0 -t 60')
+	music_b = await silkcoder.encode(download, rate=80000, ss=0, t=60)
 	await app.sendGroupMessage(group, MessageChain.create([await app.uploadVoice(music_b)]))
 

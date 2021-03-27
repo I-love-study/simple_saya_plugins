@@ -27,7 +27,7 @@ anime_timesche|新番时刻表||aiohttp<br/>pillow|
 auto_ban|禁言我|||
 baidu|百度百科，百度热点|当年酷Q论坛上的一个帖子|aiohttp<br/>lxml|
 bangumi|番剧详细信息|[SAGIRI-kawaii/sagiri-bot](https://github.com/SAGIRI-kawaii/sagiri-bot)|aiohttp|
-bar_music|网易云音乐音频||graia-template<br/>pycryptodome<br/>ujson<br/>aiofiles<br/>pillow|需要expand/Netease.py<br/>expand/transcode.py<br/>lib/silk_v3_encoder<br/>(非Windows请自行去[这里](https://github.com/kn007/silk-v3-decoder/tree/master/silk)下载编译)<br/>需要pillow是因为transcode还有一个有图片压缩函数，如不需要可删除
+bar_music|网易云音乐音频||graia-template<br/>graiax-silkcoder<br/>pycryptodome<br/>ujson<br/>aiofiles|需要expand/Netease.py
 COVID|新冠疫情查询||matplotlib<br/>numpy<br/>numpy|
 video_info|B张视频详细信息||aiohttp|
 petpet|petpet图片制作|[SAGIRI-kawaii/sagiri-bot](https://github.com/SAGIRI-kawaii/sagiri-bot)|pillow|
